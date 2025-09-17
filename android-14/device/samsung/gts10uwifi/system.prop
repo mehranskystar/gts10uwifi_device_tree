@@ -1,0 +1,16 @@
+ro.product.system.brand=samsung
+ro.product.system.device=gts10uwifi
+ro.product.system.manufacturer=samsung
+ro.product.system.model=SM-X920
+ro.product.system.name=twrp_gts10uwifi
+ro.system.product.cpu.abilist=arm64-v8a
+ro.system.product.cpu.abilist64=arm64-v8a
+ro.system.build.version.release=14
+ro.system.build.version.sdk=34
+ro.build.version.release=14
+ro.build.version.sdk=34
+ro.sf.lcd_density=280
+ro.board.platform=mt6989
+ro.secure=0
+ro.debuggable=1
+ro.treble.enabled=false
