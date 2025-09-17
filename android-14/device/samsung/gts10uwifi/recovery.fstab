@@ -1,0 +1,9 @@
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+/dev/block/by-name/system   /system   ext4   ro,barrier=1   wait
+/dev/block/by-name/userdata   /data   f2fs   rw,fsync_mode=nobarrier   wait,check,formattable,encryptable=/dev/block/by-name/metadata
+/dev/block/by-name/cache   /cache   f2fs   rw   wait,check,formattable
+/dev/block/by-name/sdcard   /sdcard   vfat   defaults   wait
+/dev/block/by-name/recovery   /recovery   ext4   defaults   wait
