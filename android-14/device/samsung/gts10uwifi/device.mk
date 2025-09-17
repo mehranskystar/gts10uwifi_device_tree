@@ -1,24 +1,17 @@
 LOCAL_PATH := device/samsung/gts10uwifi
 
-# Kernel
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image.gz-dtb
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-
-# DTBO
 BOARD_PREBUILT_DTBOIMAGE := $(LOCAL_PATH)/prebuilt/dtbo.img
-BOARD_DTBOIMG_PARTITION_SIZE := 8388608
+BOARD_DTBOIMG_PARTITION_SIZE := 451454
 
-# Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a55
-
-# Platform
 TARGET_BOARD_PLATFORM := mt6989
 
-# TWRP flags
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
