@@ -1,23 +1,3 @@
-LOCAL_PATH := $(call my-dir)
-
-# Boot image
-PRODUCT_PACKAGES += \
-    mkbootimg \
-    bootimg_tools
-
-# Recovery
-PRODUCT_PACKAGES += \
-    recovery \
-    recovery.img
-
-# Kernel
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/Image.gz-dtb:kernel
-
-# DTBO
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/dtbo.img:dtbo.img
-
 # Flash image
 FLASH_IMAGE_TARGET ?= $(PRODUCT_OUT)/recovery.tar
 
