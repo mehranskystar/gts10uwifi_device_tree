@@ -1,5 +1,5 @@
-# Vendor props
-ro.vendor.build.security_patch=2024-08-01
+# Crypto
+ro.vendor.build.security_patch=2025-08
 ro.vendor.build.version.release=14
 ro.vendor.build.version.sdk=34
 ro.vendor.build.id=UP1A.231005.007
@@ -7,4 +7,10 @@ ro.vendor.build.tags=test-keys
 ro.vendor.build.type=eng
 ro.vendor.product.cpu.abilist=arm64-v8a
 ro.vendor.product.cpu.abilist64=arm64-v8a
-ro.fastbootd.available=true
+
+# USB
+vendor.usb.use_ffs_mtp=1
+persist.sys.usb.config=mtp,adb
+
+# Version
+keymaster_ver=4.0
