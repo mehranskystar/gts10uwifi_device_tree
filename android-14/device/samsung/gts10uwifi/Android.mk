@@ -6,7 +6,6 @@
 #
 
 LOCAL_PATH := device/samsung/gts10uwifi
-
 ifeq ($(TARGET_DEVICE),gts10uwifi)
 include $(call all-subdir-makefiles)
 endif
